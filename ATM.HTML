@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var banknotes = [100, 50, 20, 10, 5, 1]
+        var wdamount = 687;
+
+        for (var i = 0; i < banknotes.length; i++) {
+            var banknote = banknotes[i];
+            if (wdamount > banknote) {
+                var change = wdamount % banknote
+                var banknotecount = (wdamount - change) / banknote
+                
+
+                console.log("banknote: " + banknote + "count: " + banknotecount )
+                wdamount = change 
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+    
+
+</html>
